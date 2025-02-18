@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiftlogix</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+      integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- .......................HEADER-SECTION.......................   -->
+    <!-- .......................HEADER-SECTION.......................   -->
+    <div class="background-header">
+      <section class="main">
+        <header class="header">
+          <div class="logo">
+            <img src="images/logo.svg" alt="logo" />
+          </div>
+
+          <nav class="nav-link">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Track Shipment</a>
+            <a href="#">About Us</a>
+          </nav>
+
+          <div class="log-sign">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+          </div>
+
+          <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </header>
+
+        <div class="dropdown">
+          <div class="dropdown_menu">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Track Shipment</a>
+            <a href="#">About Us</a>
+          </div>
+          <div class="dropdown_menu">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </section>
+    </div>
+
+    <script>
+      const togglebtn = document.querySelector(".toggle-btn");
+      const togglebtnIcon = document.querySelector(".toggle-btn i");
+      const dropdown = document.querySelector(".dropdown");
+      const overlay = document.querySelector(".overlay");
+
+      togglebtn.onclick = function () {
+        dropdown.classList.toggle("open");
+        overlay.classList.toggle("show");
+
+        const isOpen = dropdown.classList.contains("open");
+        togglebtnIcon.className = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+
+      overlay.onclick = function () {
+        dropdown.classList.remove("open");
+        overlay.classList.remove("show");
+        togglebtnIcon.className = "fa-solid fa-bars";
+      };
+    </script>
+
+    <!-- ............................IMAGE-LOGIX-INFO............................ -->
+    <!-- ............................IMAGE-LOGIX-INFO............................ -->
+    <section class="image-logix-info">
+      <div class="image-logix">
+        <h1>Effortless Logistics, Every Step of the Way.</h1>
+        <p>
+          Manage your shipments, track in real-time, and get the best rates—all
+          from one platform.
+        </p>
+      </div>
+      <div class="learn-more">
+        <a href="#">Get a Free Quote</a>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div class="image-mobile">
+        <!-- <img src="images/logix-picture.png" alt="image" /> -->
+      </div>
+    </section>
+    <!-- ..................................FEATURES-SECTION............................... -->
+    <!-- ..................................FEATURES-SECTION............................... -->
+    <section class="services-features">
+      <div class="services-features-texts">
+        <h2>Three main <span class="service">services</span></h2>
+        <p>
+          Our app gives you unparalled visibility into your entire logistics
+          network. Whether you're managing a single delivery or overseeing
+          thousands,you can track the exact location of every shipment in real
+          time.
+        </p>
+      </div>
+    </section>
+    <section class="features-box">
+      <div class="box">
+        <img src="images/Clock Circle.svg" alt="icon" />
+        <h4>Track Every Shipment in Real Time</h4>
+        <p>
+          Stay updated on your cargo’s exact location with instant tracking
+          notifications
+        </p>
+      </div>
+      <div class="box">
+        <img src="images/Screencast.svg" alt="icon" />
+        <h4>Automate Route Optimization</h4>
+        <p>
+          Cut costs and time by letting our AI-driven system optimize delivery
+          routes.
+        </p>
+      </div>
+      <div class="box">
+        <img src="images/Document icon.svg" alt="icon" />
+        <h4>Detailed Analytics and Reporting</h4>
+        <p>
+          Make data-driven decisions with comprehensive logistics reports at
+          your fingertips.
+        </p>
+      </div>
+    </section>
+    <!-- ........................................MAINTENANCE-SECTION......................... -->
+    <!-- ........................................MAINTENANCE-SECTION......................... -->
+    <section class="maintenance">
+      <div class="container-maintenance">
+        <h2>Your Fleet's Safety, Our Top Priority</h2>
+        <p>
+          Regular safety checks and maintenance are part of our commitment to
+          keeping your fleet in top condition. Our app schedules and tracks
+          inspections, ensuring that every vehicle meets stringent safety
+          standards
+        </p>
+        <a href="#" class="top-quote">Get a Free Quote</a>
+        <img src="images/ci_double-quotes-lcon.svg" alt="image" />
+      </div>
+      <div class="van-a">
+        <img src="images/Van 2.png" alt="icon" class="van-image" />
+        <a href="#">Get a Free Quote</a>
+      </div>
+    </section>
+    <!-- ............................................NUMBERED SECTION......................................... -->
+    <!-- ............................................NUMBERED SECTION......................................... -->
+    <section class="numbered-section">
+      <div class="items-number">
+        <div>
+          <h1>10,000+</h1>
+          <p>Deliveries Managed</p>
+        </div>
+        <div>
+          <h1>2,500+</h1>
+          <p>Active Clients</p>
+        </div>
+        <div>
+          <h1>98%</h1>
+          <p>On-Time Delivery Rate</p>
+        </div>
+        <div>
+          <h1>200+</h1>
+          <p>Industry Award</p>
+        </div>
+      </div>
+    </section>
+    <!-- ................VAN-INFO......................................... -->
+    <!-- ............................................VAN-INFO......................................... -->
+    <section class="van-info2">
+      <div class="container">
+        <div class="text-infos">
+          <h1>Ready to Revolutionize Your Logistics Operations?</h1>
+          <p>
+            Join countless other businesses that have streamlined their
+            logistics with our cutting-edge solutions
+          </p>
+          <a href="#">Get a Free Quote</a>
+        </div>
+        <img src="images/van picture.png" alt="image" />
+      </div>
+    </section>
+    <!-- ..............................FOOTER-SECTION...................................... -->
+    <!-- ..............................FOOTER-SECTION...................................... -->
+    <footer>
+      <div class="footer">
+        <section class="footer-first-section">
+          <a href="#" class="footer-logo">
+            <img src="images/swiftlogix-2.png" alt="" />
+          </a>
+          <ul>
+            <li>We're here to support you every step of the way</li>
+          </ul>
+        </section>
+        <section class="footer-following-sections">
+          <h3>Support</h3>
+          <ul>
+            <a href="#">Getting Started</a>
+            <a href="#">FAQS</a>
+            <a href="#">Help Articles</a>
+          </ul>
+        </section>
+        <section class="footer-following-sections">
+          <h3>Legal</h3>
+          <ul>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </ul>
+        </section>
+        <section class="footer-following-sections">
+          <h3>Services</h3>
+          <ul>
+            <a href="#">Shipment Tracking</a>
+            <a href="#">Route Optimization</a>
+            <a href="#">Inventory Management</a>
+            <a href="#">Freight Management</a>
+            <a href="#">Real-Time Analytics</a>
+          </ul>
+        </section>
+      </div>
+      <section class="last-infos">
+        <div class="icon-info">
+          <a href="icon" class="socials">
+            <img src="images/Facebook icon.svg" alt="icon" />
+            <img src="images/Youtube icon.svg" alt="icon" />
+          </a>
+        </div>
+        <div class="info">
+          <h4>Swiftlogix 2024 © All Rights Reserved</h4>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

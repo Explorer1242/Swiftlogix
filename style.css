@@ -1,0 +1,1107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #035e89;
+  --black: #000;
+  --paragraph-grey: #6d6d6d;
+  --Inter: "Inter", sans-serif;
+  --blue-linear-gradient: linear-gradient(101deg, #0179b4 21%, #88d8ff 93.51%);
+  --light-blue-footer: #b6e6ff;
+  --white: #fff;
+  --Manrope: "Manrope", serif;
+}
+/* .........................HEADER SECTION............................... */
+/* .........................HEADER SECTION............................... */
+.main {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.logo img {
+  width: 100%;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-around;
+}
+.log-sign {
+  display: flex;
+  gap: 16px;
+}
+.nav-link a {
+  text-decoration: none;
+  font-family: var(--Inter);
+  color: var(--black);
+  font-size: 1.3vw;
+  white-space: nowrap;
+}
+
+.dropdown_menu a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--black);
+  font-family: var(--Inter);
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  right: 2.9rem;
+  top: 100px;
+  width: 300px;
+  background-color: var(--blue);
+  overflow: hidden;
+  height: 0;
+  border-radius: 10px;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open {
+  height: 320px;
+}
+
+.dropdown a {
+  padding: 0.8rem;
+  display: flex;
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+}
+.log-sign a,
+.learn-more a:first-child,
+.learn-more a:last-child,
+.maintenance a,
+.container a,
+.top-quote a,
+.dropdown_menu2 a:first-child,
+.dropdown_menu2 a:last-child {
+  background-color: var(--blue);
+  padding: 14px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--Inter);
+  font-weight: 400;
+  font-size: 1.3vw;
+  white-space: nowrap;
+  border: 1px solid var(--blue);
+}
+
+.top-quote {
+  display: none;
+}
+.log-sign a:last-child,
+.learn-more a:last-child,
+.dropdown_menu2 a:last-child {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.toggle-btn {
+  font-size: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+  display: none;
+}
+
+/* ................LOGIX-IMAGE-INFOS................................. */
+/* ................LOGIX-IMAGE-INFOS................................. */
+.image-logix-info {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      #fff 0%,
+      #fff 25%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(images/logix-picture.png);
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.image-logix {
+  width: 85%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.image-logix h1 {
+  color: var(--blue);
+  font-family: var(--Inter);
+  font-size: 70px;
+  line-height: 130%;
+  font-weight: 800;
+  width: 70%;
+  max-width: 900px;
+}
+.image-logix p {
+  color: var(--black);
+  font-family: var(--Inter);
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+  width: 48%;
+  max-width: 900px;
+  padding-top: 61px;
+}
+
+.learn-more {
+  width: 85%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.learn-more a {
+  margin-right: 12px;
+}
+
+.image-mobile {
+  display: none;
+}
+
+/* .............................FEATURES-SECTION....................... */
+/* .............................FEATURES-SECTION....................... */
+.services-features {
+  width: 85%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.services-features-texts {
+  text-align: center;
+}
+.services-features-texts h2 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: var(--Inter);
+  color: #3d3d3d;
+}
+.services-features span {
+  background: linear-gradient(99deg, #88d8ff 27.59%, #0179b4 59.73%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.services-features-texts p {
+  font-size: 16px;
+  color: #6d6d6d;
+  font-family: var(--Inter);
+  padding: 40px 0 40px 0;
+  font-weight: 500;
+  margin: 0 auto;
+  line-height: 24px;
+  width: 70%;
+}
+
+.features-box {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  margin-bottom: 100px;
+  gap: 50px;
+  margin: 0 auto;
+  flex: 1 0 0;
+}
+
+.features-box .box {
+  width: 350px;
+  padding: 40px;
+  border-radius: 24px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  outline: none;
+  border: 2px solid transparent;
+  background-color: #fff;
+  margin: 0 auto;
+  border: 2px solid #c5ecff;
+  box-shadow: 3.122px 9.366px 21.854px 0px rgba(0, 0, 0, 0.06);
+}
+
+.features-box .box img {
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: #eff9ff;
+  border-radius: 8px;
+}
+
+.features-box .box h4 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue);
+  font-family: var(--Inter);
+}
+
+.features-box .box p {
+  color: var(--paragraph-grey);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--Inter);
+  line-height: 24px;
+  width: 75%;
+  text-align: left;
+}
+
+/* ..............................MAINTENANCE............................ */
+/* ..............................MAINTENANCE............................ */
+.maintenance {
+  width: 70%;
+  margin: 80px auto;
+  margin-top: 50px 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  border-radius: 21.768px;
+  box-shadow: 0px 85.258px 181.4px 0px rgba(21, 21, 21, 0.15);
+}
+
+.container-maintenance {
+  padding: 35px 25px;
+  margin-left: 25px;
+  width: 80%;
+}
+.container-maintenance h2 {
+  font-family: var(--Inter);
+  font-size: 21.768px;
+  font-weight: 700;
+}
+
+.container-maintenance p {
+  font-size: 18px;
+  font-family: var(--Inter);
+  font-weight: 400;
+  margin: 14px 0;
+  line-height: 166.6%;
+}
+
+.container-maintenance img{
+  width: 30%;
+}
+
+.van-a img {
+  width: 100%;
+  position: relative;
+  right: -15%;
+}
+
+.van-a a {
+  position: relative;
+  right: -80%;
+}
+
+/* ............................NUMBERED SECTION......................................... */
+/* ............................NUMBERED SECTION......................................... */
+.numbered-section {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.numbered-section .items-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 0px;
+}
+.numbered-section .items-number h1 {
+  font-family: "Manrope", serif;
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(101deg, #0179b4 21%, #88d8ff 93.51%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #0179b4;
+}
+.numbered-section .items-number p {
+  font-family: var(--Inter);
+  font-size: 14px;
+  font-weight: 600;
+  color: #6d6d6d;
+}
+/* ........................VAN-INFO.............................. */
+/* ........................VAN-INFO.............................. */
+.van-info2 {
+  width: 85%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 14px;
+  background-color: #f2faff;
+  padding: 32px;
+}
+
+.container .text-infos h1 {
+  font-size: 3.5vw;
+  color: var(--blue);
+  font-weight: 600;
+  padding-bottom: 24px;
+  font-family: var(--Inter);
+}
+.container a {
+  position: absolute;
+  margin-top: 24px;
+}
+.container .text-infos p {
+  width: 90%;
+  line-height: 150%;
+  font-size: 1.3vw;
+  font-weight: 400;
+  color: #4d4c52;
+  font-family: var(--Inter);
+}
+
+/* ...................................VAN-INFO-MOBILE....................................... */
+/* ...................................VAN-INFO-MOBILE....................................... */
+@media screen and (max-width: 1440px) {
+  .container .text-infos h1 {
+    font-size: 3vw;
+    padding-bottom: 20px;
+    /* padding-right: 20px; */
+  }
+
+  .container .text-infos p {
+    font-size: 1vw;
+  }
+
+  .container a {
+    margin-top: 20px;
+  }
+}
+/* ..................................NUMBERED-SECTION-MOBILE............................. */
+/* ..................................NUMBERED-SECTION-MOBILE............................. */
+.numbered-section .items-number h1 {
+  font-size: 3.5vw;
+}
+
+.numbered-section .items-number p {
+  white-space: nowrap;
+  font-size: 1.1vw;
+}
+/* ........................................FOOTER-SECTION........................... */
+/* ........................................FOOTER-SECTION........................... */
+footer {
+  background-color: var(--blue);
+  padding-top: 80px;
+  font-family: var(--Inter);
+  color: var(--white);
+}
+
+.footer {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 60px;
+  justify-content: space-between;
+  border-bottom: 2px solid #b6e6ff;
+}
+.footer-following-sections ul {
+  display: grid;
+  gap: 16px;
+}
+.footer-following-sections a {
+  font-size: 16px;
+  color: var(--white);
+  font-family: var(--Inter);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer-following-sections h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer-first-section img {
+  margin-bottom: 45px;
+}
+.footer-first-section li {
+  width: 70%;
+  font-size: 16px;
+  font-family: var(--Manrope);
+  line-height: 24px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.last-infos {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials {
+  margin-right: 12px;
+}
+
+.info h4 {
+  font-size: 16px;
+  font-family: var(--Inter);
+  font-weight: 600;
+}
+
+/* mobile screens  */
+
+@media screen and (max-width: 1440px) {
+  .image-logix h1 {
+    font-size: 5vw;
+  }
+
+  .image-logix-info {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        90deg,
+        #fff 0%,
+        #fff 25%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(images/logix-picture.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+  .image-logix p {
+    font-size: 1.6vw;
+  }
+}
+
+.image-logix-info {
+  background-position: top;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 90%;
+  }
+  .image-logix-info {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        90deg,
+        #fff 0%,
+        #fff 25%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(images/logix-picture.png);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 140px;
+  }
+  .log-sign a {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .nav-link,
+  .header {
+    gap: 30px;
+  }
+  .nav-link a {
+    font-size: 14px;
+  }
+
+  .image-logix {
+    width: 90%;
+  }
+  .image-logix h1 {
+    font-size: 5vw;
+  }
+
+  .image-logix p {
+    font-size: 16px;
+  }
+
+  .learn-more {
+    width: 90%;
+  }
+  .container-maintenance h2 {
+    font-size: 18px;
+  }
+  .container-maintenance p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .background-header {
+    background-color: var(--white);
+    box-shadow: 0px 4px 9.7px 0px rgba(131, 131, 131, 0.05);
+    height: 100px;
+  }
+  .services-features {
+    padding: 0;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: var(--blue);
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .dropdown.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .dropdown_menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9;
+  }
+
+  .overlay.show {
+    display: block;
+  }
+
+  .main {
+    width: 90%;
+  }
+  .nav-link,
+  .log-sign {
+    display: none;
+  }
+  .toggle-btn {
+    display: block;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .features-box {
+    width: 90%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: nowrap; */
+    margin-bottom: 100px;
+    margin: 0 auto;
+    flex: 1 0 0;
+  }
+
+  .features-box .box {
+    width: 100%;
+    padding: 40px;
+    border-radius: 24px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    outline: none;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+
+  .image-logix-info {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        90deg,
+        #fff 0%,
+        #fff 25%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(images/logix-picture.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+
+  .image-logix {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  .image-logix h1 {
+    margin-top: 40px;
+    font-size: 5vw;
+    /* max-width: 900px; */
+  }
+  .image-logix p {
+    font-size: 2.5vw;
+    padding-top: 30px;
+  }
+
+  .learn-more {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .learn-more a {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .van-info2 {
+    width: 100%;
+    border-radius: 0;
+  }
+  .container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+  }
+
+  .container img {
+    padding-top: 25px;
+    object-fit: cover;
+    clip-path: inset(0 25% 0 0);
+  }
+
+  .van-info2 .container img {
+    width: 155%;
+  }
+  .image-logix {
+  }
+  .image-logix h1 {
+    font-size: 5vw;
+  }
+
+  .image-logix p {
+    font-size: 2.5vw;
+    /* padding-top: 20px; */
+  }
+
+  .image-logix-info {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        90deg,
+        #fff 0%,
+        #fff 25%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(images/logix-picture.png);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+
+  .learn-more {
+    padding: 0;
+  }
+
+  .learn-more a:first-child,
+  .container-maintenance a,
+  .container a {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .learn-more a:last-child {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .maintenance {
+    width: 90%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .container-maintenance {
+    padding: 10px 40px 40px 40px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .container-maintenance h2 {
+    font-family: var(--Inter);
+    font-size: 3.5vw;
+    font-weight: 700;
+  }
+
+  .container-maintenance p {
+    font-size: 3vw;
+    font-family: var(--Inter);
+    font-weight: 400;
+    margin: 14px 0;
+    line-height: 166.6%;
+  }
+
+  .container-maintenance img {
+    width: 15%;
+    margin-top: 15px;
+  }
+
+  .van-a {
+    position: relative; /* So the button moves relative to .van-a */
+  }
+
+  .van-a img {
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    right: 5%;
+    display: block;
+  }
+
+  .van-a a {
+    position: absolute;
+    bottom: 110px;
+    right: 63%;
+    display: none;
+    display: inline-block;
+    width: fit-content;
+    visibility: hidden;
+  }
+
+  .top-quote {
+    display: block;
+    width: fit-content;
+  }
+
+  .items-number {
+    padding-top: 250px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .text-infos h1 {
+    font-size: 5vw;
+  }
+
+  .container .text-infos p {
+    font-size: 3vw;
+  }
+
+  .container img {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-following-sections {
+    margin-top: 24px;
+  }
+
+  .numbered-section {
+    width: 85%;
+    text-align: center;
+  }
+
+  .numbered-section .items-number h1 {
+    font-size: 36.308px;
+    text-align: center;
+    background: linear-gradient(101deg, #0179b4 21%, #88d8ff 93.51%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+  }
+
+  .numbered-section .items-number p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .numbered-section .items-number {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-logix-info {
+    position: relative;
+    background-image: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .image-logix {
+    width: 90%;
+    padding: 0;
+  }
+
+  .image-logix h1 {
+    width: 100%;
+    font-size: 8vw;
+  }
+  .image-logix p {
+    width: 90%;
+    font-size: 3.5vw;
+    padding-top: 24px;
+  }
+  .learn-more {
+    /* padding: 5px; */
+    margin-top: 30px;
+  }
+
+  .learn-more a:first-child {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .learn-more a:last-child {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .services-features {
+    margin-top: 200px;
+  }
+
+  .image-logix-info .image-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .image-logix-info .image-mobile {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    height: 350px;
+    overflow: hidden;
+  }
+
+  .image-logix-info .image-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-logix-info .image-mobile::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1) 5%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .last-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .info h4 {
+    font-size: 14px;
+  }
+
+  .numbered-section .items-number h1 {
+    font-size: 30px;
+  }
+
+  .services-features {
+    z-index: 1;
+    margin-top: 90px;
+  }
+
+  .services-features .services-features-texts p {
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 24px;
+  }
+
+  .features-box .box h4 {
+    width: 100%;
+  }
+
+  .features-box .box p {
+    width: 100%;
+  }
+
+  .maintenance {
+    max-width: 700px;
+  }
+  .container-maintenance {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .maintenance {
+    width: 90%;
+    /* height: 400px; */
+    box-sizing: unset;
+  }
+
+  .container-maintenance {
+    width: 100%;
+  }
+
+  .container-maintenance h2 {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .container-maintenance p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .van-a img {
+    right: 1%;
+  }
+
+  .container {
+    border-radius: 0;
+  }
+  .text-infos {
+    width: 100%;
+  }
+
+  .container .text-infos h1 {
+    font-size: 28px;
+  }
+
+  .container .text-infos p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  
+.services-features-texts h2, .services-features-texts span{
+  font-size: 30px;
+}
+}
+
+
+@media screen and (max-width: 980px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-first-section {
+    width: 100%;
+  }
+
+  .footer-following-sections {
+    width: 45%;
+  }
+
+  .footer-following-sections a {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-following-sections {
+    width: 100%;
+  }
+
+  .items-number{
+    padding-top: 200px;
+  }
+
+  .background-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* Optional: Ensure background color for visibility */
+    z-index: 1000; /* Ensures it stays above other elements */
+    padding: 20px 0; /* Adjust padding as needed */
+    box-shadow: 0px 4px 9.7px 0px rgba(131, 131, 131, 0.05); /* Optional shadow */
+  }
+  
+  .main{
+    padding-top: 15px;
+  }
+
+  .image-logix {
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .items-number{
+    padding-top: 100px;
+  }
+
+  .van-info2{
+    padding: 0;
+  }
+
+  .features-box .box{
+    padding: 28px;
+  }
+}
+
+
+
